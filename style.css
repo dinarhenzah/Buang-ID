@@ -1,0 +1,325 @@
+
+
+
+* {
+    margin: 0;
+}
+
+body {
+    height: 3000px;
+}
+/* Home */
+.home {
+    padding: 20px;
+    height: auto;
+    background: linear-gradient(180deg, rgba(216,28,129,1) 0%, rgba(255,0,99,1) 100%);
+}
+.home .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .logo .logoBg {
+    /* position: absolute; */
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.home .logo img {
+    height: 80px;
+}
+
+.home .judul {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+.home .judul p {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+.home .tombol {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.home .tombol .tambah{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.home .tombol .eksplore {
+    height: 40px;
+    width: 150px;
+    border: #fff solid 1px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #2d193e;
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Slides */
+.slideshow{
+    position: relative;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.slideshow .mySlides {
+    display: none;
+}
+.slideshow .mySlides img{
+    border-radius: 30px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 17px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 20px 20px;
+    position: absolute;
+    top: 0;
+}
+.bulet {
+    position: absolute;
+    top: 88%;
+    left: 48%;
+}
+.dot {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+
+/* Menu */
+.menu-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-70px);
+    text-align: center  ;
+    background-color: #fff;
+    width: 50%;
+    height: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    padding: 20px;
+}
+.menu a {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(180deg, rgba(216,28,129,1) 0%, rgba(255,0,99,1) 100%);
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .menu-icon svg{
+    width: 50%;
+}
+
+/* About */
+.about-wrapper {
+    position: relative;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.about {
+    position: relative;
+    height: 50vh;
+}
+.about .keterangan {
+    width: 48%;
+    float: left;
+}
+.about .keterangan .keterangan-body .logo{
+    position: absolute;
+}
+.about .keterangan .keterangan-body .logo svg{
+    color: rgba(255,0,99,1);
+}
+.about .keterangan .keterangan-body .teks {
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+.about .keterangan .keterangan-body .teks h1 {
+    color: rgba(0, 0, 0, 0.8);
+}
+.about .keterangan .keterangan-body .teks p {
+    color: rgba(0, 0, 0, 0.5);
+}
+.about .gallery {
+    position: relative;
+    width: 48%;
+    float: right;
+    display: grid;
+}
+.about .gallery .overlay {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0,0.8);
+    position: absolute;
+    left: 92%;
+    right: 0;
+}
+.about .gallery .foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .gallery .col-1{
+    grid-column: 1/2;
+
+}
+.about .gallery .col-2{
+    grid-column: 2/2;
+}
+.about .gallery .col-3{
+    grid-column: 1/2;
+}
+.about .gallery .col-4{
+    grid-column: 2/2;
+}
+.gallery .foto img {
+    width: 100%;
+    height: auto;
+}
+
+/* Produk */
+.produk-req{
+    position: relative;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.produk{
+    height: 50vh;
+}
+.produk svg {
+    position: absolute;
+}
+.produk h1 {
+    margin-left: 40px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.produk .carousel .card {
+    position: relative;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.produk .carousel .card .card-header img {
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.produk .carousel .card .teks {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.produk .carousel .card .teks p {
+    color: rgba(100, 100, 111, 0.5);
+
+}
+.produk .carousel .card .teks h3 {
+    margin-top: 20px;
+    color: rgba(100, 100, 111, 0.9);
+    margin-bottom: 10px;
+
+}
+.produk .carousel .card .teks span {
+    color: rgba(100, 100, 111, 0.5);
+}
+
+
+/* Responsive */
+@media screen and (max-width: 915px) {
+    .home .judul p {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+}

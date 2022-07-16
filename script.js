@@ -37,7 +37,7 @@ function showSlides(n){
 
 
 // ----- Carousel ----- //
-const buttonsWrapper = document.querySelector(".map");
+/* const buttonsWrapper = document.querySelector(".map");
 const slides = document.querySelector(".inner");
 
 buttonsWrapper.addEventListener("click", e => {
@@ -58,3 +58,4 @@ buttonsWrapper.addEventListener("click", e => {
   }
 });
 
+ */

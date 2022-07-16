@@ -228,15 +228,27 @@ body {
     position: absolute;
     left: 92%;
     right: 0;
+    z-index: -3;
 }
+
 .about .gallery .foto {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.about .gallery .foto img {
+    filter: opacity(70%);
+}
+
 .about .gallery .col-1{
     grid-column: 1/2;
-
+}
+.about .gallery .foto:nth-child(1) img {
+    border-top-left-radius: 25%;
+}
+.about .gallery .foto:nth-child(3) img {
+    border-bottom-left-radius: 25%;
 }
 .about .gallery .col-2{
     grid-column: 2/2;
@@ -269,14 +281,19 @@ body {
     margin-left: 40px;
 }
 
-.carousel {
+/* .carousel {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+} */
+
+.produk .swiper {
+    width: 100%;
+    
 }
-.produk .carousel .card {
+.produk .card {
     position: relative;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -286,28 +303,28 @@ body {
     cursor: pointer;
 }
 
-.produk .carousel .card .card-header img {
+.produk .card .card-header img {
     height: 220px;
     width: 220px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.produk .carousel .card .teks {
+.produk .card .teks {
     margin-left: 15px;
     margin-bottom: 15px;
 }
-.produk .carousel .card .teks p {
+.produk .card .teks p {
     color: rgba(100, 100, 111, 0.5);
 
 }
-.produk .carousel .card .teks h3 {
+.produk .card .teks h3 {
     margin-top: 20px;
     color: rgba(100, 100, 111, 0.9);
     margin-bottom: 10px;
 
 }
-.produk .carousel .card .teks span {
+.produk .card .teks span {
     color: rgba(100, 100, 111, 0.5);
 }
 

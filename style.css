@@ -6,7 +6,11 @@
 }
 @font-face {
     font-family: Intro;
-    src: url(./font/Intro/Commercial/WEB/IntroDemo-BlackCAPS.woff);
+    src: url(./font/Intro/Non-commercial/Normal/Intro/OTF/Intro-Trial-BdAlt.otf);
+}
+@font-face {
+    font-family: SanSerif;
+    src: url(./font/SansSerifFLF-Demibold.otf);
 }
 
 body {
@@ -90,6 +94,8 @@ body {
 }
 .slideshow .mySlides img{
     border-radius: 30px;
+    height: 700px;
+    object-fit: cover;
 }
 .prev, .next {
     cursor: pointer;
@@ -130,7 +136,7 @@ body {
 }
 .bulet {
     position: absolute;
-    top: 88%;
+    top: 84%;
     left: 48%;
 }
 .dot {
@@ -187,8 +193,13 @@ body {
     justify-content: center;
     align-items: center;
 }
-.menu .menu-icon svg{
+.menu .menu-icon img{
+    margin-top: 10px;
     width: 50%;
+}
+.menu .menu-icon p {
+    font-size: 17px;
+    font-family: Intro;
 }
 
 /* About */
@@ -200,12 +211,16 @@ body {
 }
 .about {
     position: relative;
-    height: 20vh;
+    height: 25vh;
     padding-bottom: 500px;
 }
 .about .keterangan {
+    position: relative;
     width: 48%;
     float: left;
+}
+.about .keterangan .keterangan-body {
+    margin-top: 40px;
 }
 .about .keterangan .keterangan-body .logo{
     position: absolute;
@@ -214,20 +229,25 @@ body {
     color: rgba(255,0,99,1);
 }
 .about .keterangan .keterangan-body .teks {
+    margin-top: 10px;
     margin-left: 50px;
     margin-bottom: 25px;
 }
 .about .keterangan .keterangan-body .teks h1 {
     color: rgba(0, 0, 0, 0.8);
+    font-family: Intro;
 }
 .about .keterangan .keterangan-body .teks p {
     color: rgba(0, 0, 0, 0.5);
+    font-family: SanSerif;
+    font-size: 20px;
 }
 .about .gallery {
     position: relative;
     width: 48%;
     float: right;
     display: grid;
+    cursor: pointer;
 }
 .about .gallery .overlay {
     width: 100px;
@@ -251,7 +271,6 @@ body {
 
 .gallery img {
     width: 100%;
-    height: auto;
 }
 
 /* Produk */
@@ -264,6 +283,10 @@ body {
 .produk{
     height: auto;
     padding-bottom: 20px;
+}
+.produk .title {
+    display: flex;
+    align-items: center;
 }
 .produk svg {
     position: absolute;
@@ -281,13 +304,12 @@ body {
 } */
 
 .produk .swiper {
-    width: 100%;
     padding: 30px 30px;
 }
 .produk .card {
     position: relative;
     width: 100%;
-    height: 415px;
+    height: 455px;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
@@ -311,15 +333,23 @@ body {
     display: flex;
     align-items: center;
 }
-.produk .card .teks .diskon .badgeCB{
+.produk .card .teks .diskon .badge{
     background-color: #F5B7B1;
-    padding: 6px 5px;
+    padding: 5px 6px;
     border-radius: 7px;
     font-weight: bold;
     color: #A93226;
     margin-right: 6px;
     margin-top: -5px;
     text-decoration: unset !important;
+}
+.produk .card .teks .CB .badge {
+    background-color: #82E0AA ;
+    padding: 6px 7px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #1E8449;
+    margin-top: -5px;
 }
 .produk .card .teks .diskon span {
     color: rgba(100, 100, 111, 0.8);

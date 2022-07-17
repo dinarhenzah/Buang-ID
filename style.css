@@ -1,13 +1,20 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 
 * {
     margin: 0;
 }
+@font-face {
+    font-family: Intro;
+    src: url(./font/Intro/Commercial/WEB/IntroDemo-BlackCAPS.woff);
+}
 
 body {
     height: 3000px;
+    font-family: 'Poppins', sans-serif;
 }
+
+
 /* Home */
 .home {
     padding: 20px;
@@ -193,7 +200,8 @@ body {
 }
 .about {
     position: relative;
-    height: 50vh;
+    height: 20vh;
+    padding-bottom: 500px;
 }
 .about .keterangan {
     width: 48%;
@@ -241,25 +249,7 @@ body {
     filter: opacity(70%);
 }
 
-.about .gallery .col-1{
-    grid-column: 1/2;
-}
-.about .gallery .foto:nth-child(1) img {
-    border-top-left-radius: 25%;
-}
-.about .gallery .foto:nth-child(3) img {
-    border-bottom-left-radius: 25%;
-}
-.about .gallery .col-2{
-    grid-column: 2/2;
-}
-.about .gallery .col-3{
-    grid-column: 1/2;
-}
-.about .gallery .col-4{
-    grid-column: 2/2;
-}
-.gallery .foto img {
+.gallery img {
     width: 100%;
     height: auto;
 }
@@ -272,7 +262,8 @@ body {
     margin-top: 30px;
 }
 .produk{
-    height: 50vh;
+    height: auto;
+    padding-bottom: 20px;
 }
 .produk svg {
     position: absolute;
@@ -291,43 +282,83 @@ body {
 
 .produk .swiper {
     width: 100%;
-    
+    padding: 30px 30px;
 }
 .produk .card {
     position: relative;
+    width: 100%;
+    height: 415px;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
     transition: all 0.3s ease;
     margin: 0 20px;
     cursor: pointer;
+    padding-bottom: 10px;
 }
 
 .produk .card .card-header img {
     height: 220px;
-    width: 220px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .produk .card .teks {
     margin-left: 15px;
-    margin-bottom: 15px;
 }
-.produk .card .teks p {
-    color: rgba(100, 100, 111, 0.5);
-
+.produk .card .teks .diskon {
+    display: flex;
+    align-items: center;
+}
+.produk .card .teks .diskon .badgeCB{
+    background-color: #F5B7B1;
+    padding: 6px 5px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #A93226;
+    margin-right: 6px;
+    margin-top: -5px;
+    text-decoration: unset !important;
+}
+.produk .card .teks .diskon span {
+    color: rgba(100, 100, 111, 0.8);
+    font-size: 18px;
+    text-decoration: line-through;
 }
 .produk .card .teks h3 {
-    margin-top: 20px;
-    color: rgba(100, 100, 111, 0.9);
+    margin-top: 10px;
+    color: rgb(46, 42, 42);
     margin-bottom: 10px;
-
+    font-weight: 700;
+    font-size: 22px;
 }
-.produk .card .teks span {
-    color: rgba(100, 100, 111, 0.5);
+.produk .card .teks .kota,.ratting {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    color: rgba(100, 100, 111, 0.8);
+}
+.produk .card .teks .kota svg {
+    color:  #6C3483;
+}
+.produk .card .teks .kota p {
+    margin-left: 25px;
+}
+.produk .card .teks .ratting p {
+    margin-left: 25px;
+}
+.produk .card .teks .ratting svg{
+    color: #F1C40F;
 }
 
+.produk .card .teks .tenggat {
+    color: rgba(100, 100, 111, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
+}
 
 /* Responsive */
 @media screen and (max-width: 915px) {

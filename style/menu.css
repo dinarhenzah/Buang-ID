@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+}
+@font-face {
+    font-family: Intro;
+    src: url(./font/Intro/Non-commercial/Normal/Intro/OTF/Intro-Trial-BdAlt.otf);
+}
+@font-face {
+    font-family: SanSerif;
+    src: url(./font/SansSerifFLF-Demibold.otf);
+}
+
+body {
+    height: 3000px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Home */
+.home {
+    padding: 20px;
+    height: auto;
+    background: linear-gradient(180deg, rgba(216,28,129,1) 0%, rgba(255,0,99,1) 100%);
+}
+
+.home .hero{
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .logo .logoBg {
+    /* position: absolute; */
+    background-color: #fff;
+    height: 140px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.home .logo img {
+    height: 110px;
+}
+
+.home .judul {
+    color: #fff;
+    margin-left: 12px;
+}
+.home .judul p {
+    width: 54%;
+    margin-top: 5px;
+    color: rgba(255, 255, 255,0.8);
+}
+.home .tombol {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.home .tombol .tambah{
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: rgb(75, 73, 73);
+    font-weight: bold;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    position: absolute;
+}
+ 
+
+/* Sub Menu */
+.poster {
+    position: relative;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+.poster .link {
+    display: flex;
+    align-items: center;
+}
+.poster .link a {
+    font-size: 21px;
+    text-decoration: none !important;
+    color: #666;
+}
+.poster .link img {
+    margin: 0 5px;
+}
+.poster .banner img{
+    height: 200px;
+    width: 100%;
+}

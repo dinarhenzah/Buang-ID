@@ -291,6 +291,7 @@ body {
 .produk svg {
     position: absolute;
     margin-top: -3px;
+    color: #666;
 }
 .produk h1 {
     margin-left: 35px;

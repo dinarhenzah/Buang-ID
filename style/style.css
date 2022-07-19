@@ -22,7 +22,6 @@
 }
 
 body {
-    height: 3000px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -93,7 +92,7 @@ body {
 /* Slides */
 .slideshow{
     position: relative;
-    max-width: 70%;
+    width: 70%;
     margin: auto;
     margin-top: 30px;
 }
@@ -101,7 +100,7 @@ body {
     display: none;
 }
 .slideshow .mySlides img{
-    border-radius: 30px;
+    border-radius: 15px;
     height: 700px;
     object-fit: cover;
 }
@@ -145,7 +144,7 @@ body {
 .bulet {
     position: absolute;
     top: 84%;
-    left: 48%;
+    left: 47%;
 }
 .dot {
     cursor: pointer;
@@ -200,6 +199,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.menu a:hover {
+    background: rgba(216,28,129,1);
 }
 .menu .menu-icon img{
     margin-top: 10px;
@@ -309,6 +311,8 @@ body {
 
 .produk .swiper {
     padding-bottom: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
 }
 .produk .card {
     position: relative;
@@ -408,5 +412,112 @@ body {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
+
+    /* Home */
+    .home .judul h1{
+        font-size: 25px;
+    }
+    .home .judul p, .tombol {
+        display: none;
+    }
+    .slideshow{
+        width: 90%;
+    }
+    .slideshow .mySlides img{
+        margin-top: -10px;
+        height: 200px;
+    }
+    .bulet{
+        margin-left: -7%;    
+    }
+
+    /* Menu */
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: transparent;
+        width: 70%;
+        height: 100px;
+        box-shadow: none;
+        padding: 20px;
+        transform: translateY(-20px);
+    }
+    .menu a{
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* About */
+    .about-wrapper {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    .about {
+        position: relative;
+        height: 25vh;
+        padding-bottom: 500px;
+    }
+    .gallery img {
+        margin-top: 25px;
+    }
+    .about .keterangan .keterangan-body .logo{
+        width: 16px;
+    }
+    .about .keterangan .keterangan-body .teks h1{
+        font-size: 20px;
+        margin-top: -10px;
+    }
+    .about .keterangan .keterangan-body .teks p{
+        display: none;
+    }
+
+    /* Produk */
+    .produk-req{
+        position: relative;
+        max-width: 90%;
+        margin: auto;
+        margin-top: -95%;
+    }
+    .produk{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .produk .title {
+        display: flex;
+        align-items: center;
+    }
+    .produk svg {
+        position: absolute;
+        margin-top: -3px;
+        color: #666;
+    }
+    .produk h1 {
+        margin-left: 35px;
+        color: #666;
+        font-size: 25px;
+        font-family: Intro;
+    }
+    .produk .card {
+        position: relative;
+        width: 100%;
+        height: 455px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 10px;
+        transition: all 0.3s ease;
+        margin: 0 20px;
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+    
+
+
 }

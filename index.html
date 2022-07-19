@@ -370,9 +370,28 @@
     <script src="./script/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
+
       const swiper = new Swiper('.swiper', {
         slidesPerView: 4,
         spaceBetween: 30,
+
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 40
+          }
+        }
       });
     </script>
     <script src="./script/script.js"></script>

@@ -31,7 +31,6 @@ body {
     align-items: center;
 }
 .home .logo .logoBg {
-    /* position: absolute; */
     background-color: #fff;
     height: 140px;
     width: 140px;
@@ -72,6 +71,36 @@ body {
 /* Sidebar */
 .sidebar {
     position: absolute;
+    left: 8%;
+    margin-top: 45px;
+}
+.sidebar .menu {
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 10px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.sidebar .menu a .menu-icon{
+    background: linear-gradient(180deg, rgba(216,28,129,1) 0%, rgba(255,0,99,1) 100%);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.sidebar .menu a .menu-icon:hover {
+    background: linear-gradient(30deg, rgba(45,25,62,1) 0%, rgba(95,53,130,1) 100%);
+    transition: .8s;
+}
+.sidebar .menu a .active{
+    background: linear-gradient(30deg, rgba(45,25,62,1) 0%, rgba(95,53,130,1) 100%);
+}
+
+.sidebar .menu a .menu-icon img {
+    width: 42px;
 }
  
 
@@ -88,7 +117,7 @@ body {
 }
 .poster .link a {
     font-size: 21px;
-    text-decoration: none !important;
+    text-decoration: none;
     color: #666;
 }
 .poster .link img {
@@ -97,4 +126,122 @@ body {
 .poster .banner img{
     height: 200px;
     width: 100%;
+}
+
+/* Produk */
+.produk-req{
+    position: relative;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.produk{
+    height: auto;
+    padding-bottom: 20px;
+}
+.produk .title {
+    display: flex;
+    align-items: center;
+}
+.produk svg {
+    position: absolute;
+    margin-top: -3px;
+    color: #666;
+}
+.produk h1 {
+    margin-left: 35px;
+    color: #666;
+    font-family: Intro;
+}
+
+.produk .swiper {
+    padding-bottom: 20px;
+}
+.produk .card {
+    position: relative;
+    width: 100%;
+    height: 455px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 10px;
+    transition: all 0.3s ease;
+    margin: 0 20px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.produk .card .card-header img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.produk .card .teks {
+    margin-left: 15px;
+}
+.produk .card .teks .diskon {
+    display: flex;
+    align-items: center;
+}
+.produk .card .teks .diskon .badge{
+    background-color: #F5B7B1;
+    padding: 5px 6px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #A93226;
+    margin-right: 6px;
+    margin-top: -5px;
+    text-decoration: unset !important;
+}
+.produk .card .teks .CB .badge {
+    background-color: rgba(249, 0, 191,0.65);
+    padding: 4px 7px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: -5px;
+}
+.produk .card .teks .diskon span {
+    color: rgba(100, 100, 111, 0.8);
+    font-size: 18px;
+    text-decoration: line-through;
+}
+.produk .card .teks h4{
+    font-weight: normal;
+    font-size: 20px;
+    padding-right: 2px;
+    color: #4d4d4d;
+}
+.produk .card .teks h3 {
+    color: #4d4d4d;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 22px;
+}
+.produk .card .teks .kota,.ratting {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    color: rgba(100, 100, 111, 0.8);
+}
+.produk .card .teks .kota svg {
+    color:  #6C3483;
+}
+.produk .card .teks .kota p {
+    margin-left: 25px;
+}
+.produk .card .teks .ratting p {
+    margin-left: 25px;
+}
+.produk .card .teks .ratting svg{
+    color: #F1C40F;
+}
+
+.produk .card .teks .tenggat {
+    color: rgba(100, 100, 111, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
 }

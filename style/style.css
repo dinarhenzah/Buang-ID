@@ -5,12 +5,20 @@
     margin: 0;
 }
 @font-face {
-    font-family: Intro;
-    src: url(./font/Intro/Non-commercial/Normal/Intro/OTF/Intro-Trial-BdAlt.otf);
+    font-family: Intro; 
+    src: url(./font\Intro\Non-commercial\Normal\Intro\OTF);
 }
 @font-face {
-    font-family: SanSerif;
+    font-family: harga;
     src: url(./font/SansSerifFLF-Demibold.otf);
+}
+@font-face {
+    font-family: Sanflf;
+    src: url(../font/SansSerifFLF.otf);
+}
+@font-face {
+    font-family: Sanreguler;
+    src: url(../font/SansSerifBookFLF.otf);
 }
 
 body {
@@ -199,7 +207,7 @@ body {
 }
 .menu .menu-icon p {
     font-size: 17px;
-    font-family: Intro;
+    font-family: Intro  ;
 }
 
 /* About */
@@ -235,12 +243,12 @@ body {
 }
 .about .keterangan .keterangan-body .teks h1 {
     color: rgba(0, 0, 0, 0.8);
-    font-family: Intro;
+    font-family: Sanreguler;
 }
 .about .keterangan .keterangan-body .teks p {
     color: rgba(0, 0, 0, 0.5);
-    font-family: SanSerif;
-    font-size: 20px;
+    font-family: Sanflf;
+    font-size: 22px;
 }
 .about .gallery {
     position: relative;

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+}
+@font-face {
+    font-family: Intro; 
+    src: url(./font\Intro\Non-commercial\Normal\Intro\OTF);
+}
+@font-face {
+    font-family: harga;
+    src: url(./font/SansSerifFLF-Demibold.otf);
+}
+@font-face {
+    font-family: Sanflf;
+    src: url(../font/SansSerifFLF.otf);
+}
+@font-face {
+    font-family: Sanreguler;
+    src: url(../font/SansSerifBookFLF.otf);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Produk */
+.produk .produk-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+

@@ -6,11 +6,11 @@
 }
 @font-face {
     font-family: Intro; 
-    src: url(./font\Intro\Non-commercial\Normal\Intro\OTF);
+    src: url(../font/Intro/Non-commercial/Normal/Intro/OTF/Intro-Trial-BdAlt.otf);
 }
 @font-face {
     font-family: harga;
-    src: url(./font/SansSerifFLF-Demibold.otf);
+    src: url(../font/SansSerifFLF-Demibold.otf);
 }
 @font-face {
     font-family: Sanflf;

@@ -26,10 +26,19 @@ body {
 }
 
 /* Produk */
+.produk {
+    padding: 0 40px;
+}
 .produk .produk-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.produk .produk-wrapper .fotoProduk{
+    width: 500px;
+}
+.produk .produk-wrapper .fotoProduk img {
+    width: 100%;
 }
 
 

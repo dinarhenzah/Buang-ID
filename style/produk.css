@@ -33,6 +33,7 @@ body {
 }
 
 .home .hero{
+    padding-left: 100px;
     display: flex;
     align-items: center;
 }
@@ -67,18 +68,62 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    margin: 20px 100px;
 
 }
 .produk .produk-wrapper .fotoProduk{
     width: 500px;
 }
-.produk .produk-wrapper .fotoProduk img {
+.produk .produk-wrapper .fotoProduk .link{
+    display: flex;
+    align-items: center;
+}
+.produk .produk-wrapper .fotoProduk .link a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(0, 0, 0,0.8);
+}
+.produk .produk-wrapper .fotoProduk .link a:hover{
+    color: rgb(0, 0, 0);
+}
+.produk .produk-wrapper .fotoProduk .link svg{
+    margin: 0 8px;
+}
+.produk .produk-wrapper .fotoProduk .slides{
+    display: none;
+}
+.cursor{
+    cursor: pointer;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column{
+    float: left;
+    width: 50%;
+}
+.demo{
+    opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.produk .produk-wrapper .fotoProduk .slides img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
-
+.row .column img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 .produk .produk-wrapper .detailProduk{
     padding-left: 30px;
     width: 70%;
@@ -140,7 +185,7 @@ body {
     margin-top: 20px;
 }
 .checkout{
-    border: 0.2px solid rgba(0, 0, 0, 0.2);
+    border: 0.2px solid rgba(0, 0, 0, 0.1);
     width: 350px;
     padding: 20px;
     height: 400px;
@@ -158,21 +203,100 @@ body {
 }
 .pilihJumlah .pilih{
     border: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
     padding: 5px 0;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 140px;
+    position: relative;
+}
+.pilihJumlah .pilih button{
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+    cursor: pointer;
+}
+.pilihJumlah .pilih input{
+    text-align: center;
+    width: 25px;
+    padding: 10px;
+    z-index: 1;
+    font-size: 20px;
 }
 .pilihJumlah .sisa{
     margin-left: 10px;
     font-size: 18px;
 }
-
+.checkout .total {
+    margin-top: 80px;
+}
 .checkout .total .totalHarga {
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
+}
+.checkout .total .totalHarga p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6d6d6d;
+}
+.checkout .total .totalHarga .price .new span{
+    float: right;
+    text-decoration: line-through;
+}
+.checkout .total .totalHarga .price h2{
+    margin-bottom: 10px;
+}
+.checkout .keranjang{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255,0,99,0.9);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.checkout .keranjang:hover{
+    background-color: rgba(255,0,99,1);
+}
+.checkout .beli{
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255,0,99,0.9);
+    border-radius: 10px;    
+    background-color: transparent;      
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255,0,99,0.9);
+}
+.checkout .media{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkout .media a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgba(0, 0, 0,0.8);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.checkout .media a:hover{
+    color: rgba(0, 0, 0,1);
+}
+.checkout .media img {
+    margin-right: 10px;
+}
+.checkout .media .wishlist{
+    margin: 0 15px;
+    padding: 0 15px;
+    border-left: 1px solid rgba(0, 0, 0,0.8);
+    border-right: 1px solid rgba(0, 0, 0,0.8);
 }
 
 

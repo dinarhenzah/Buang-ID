@@ -120,6 +120,25 @@
     <!-- <script src="../script/script.js"></script> -->
     <script>
 
+        const no = document.querySelector('.number')
+        
+        function tambah(){
+            if(no.value >= 10){
+                no.value = 10;
+                alert('Max 10')
+            } else{
+                no.value++;
+            }
+        }
+        function kurang(){
+            if(no.value == 1){
+                no.value = 1;
+                alert('Min 1')
+            } else{
+                no.value--;
+            }
+        }
+
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -148,26 +167,6 @@
             captionText.innerHTML = dots[slideIndex-1].alt;
         }
 
-
-
-        const no = document.querySelector('.number')
-        
-        function tambah(){
-            if(no.value >= 10){
-                no.value = 10;
-                alert('Max 10')
-            } else{
-                no.value++;
-            }
-        }
-        function kurang(){
-            if(no.value == 1){
-                no.value = 1;
-                alert('Min 1')
-            } else{
-                no.value--;
-            }
-        }
 
     </script>
     

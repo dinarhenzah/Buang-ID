@@ -25,6 +25,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.back{
+    display: none;
+}
+
 /* Home */
 .home {
     padding: 20px;
@@ -192,7 +196,6 @@ body {
     height: 400px;
     border-radius: 10px;
     margin-top: 30px;
-
 }
 .checkout h5{
     font-size: 21px;
@@ -238,7 +241,7 @@ body {
     justify-content: space-between;
 }
 .checkout .total .totalHarga p{
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 18px;
     color: #6d6d6d;
 }
@@ -307,8 +310,27 @@ body {
 
 /* responsive */
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 500px){
 
+    .container{
+        overflow-x: hidden;
+    }
+    .back{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        position: absolute;
+        border: none;
+        margin-top: 25px;
+        margin-left: 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        z-index: 10;
+    }
     .home{
         display: flex;
         justify-content: center;
@@ -331,10 +353,12 @@ body {
     .home .hero .judul h1{
         font-size: 25px;
     }
+    .produk .produk-wrapper .fotoProduk .link{
+        display: none;
+    }
 
     /* Detile */
     .produk {
-        max-width: 100%;
         margin-left: -120px;
     }
     .produk .produk-wrapper{
@@ -344,6 +368,7 @@ body {
     .produk .produk-wrapper .fotoProduk{
         position: relative;
         width: 350px;
+
     }
     .produk .produk-wrapper .fotoProduk .slides img{
         height: 300px;
@@ -357,6 +382,27 @@ body {
         margin-left: 5px;
         width: 95%;
         height: 100px;
+    }
+    .produk .produk-wrapper .detailProduk{
+        margin-left: -23px;
+    }
+    .produk .produk-wrapper .detailProduk h4{
+        width: 400px;
+    }
+    .produk .produk-wrapper .detailProduk p{
+        width: 340px;
+    }
+    .produk .produk-wrapper .detailProduk .price h1{
+        font-size: 28px;
+    }
+    .produk .produk-wrapper .detailProduk .price .CB .badge{
+        font-size: 12px;
+    }
+    .produk .produk-wrapper .detailProduk .detail .active{
+        width: 340px;
+    }
+    .checkout{
+        width: 310px;
     }
 
 }

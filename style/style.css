@@ -313,14 +313,14 @@ body {
     padding-bottom: 20px;
     border-radius: 15px;
     margin-top: 10px;
+    width: 100%;
+    height: 455px;
 }
 .swiper .swiper-wrapper .swiper-slide a{
     text-decoration: none;
 }
 .swiper .swiper-wrapper .swiper-slide {
     position: relative;
-    width: 100%;
-    height: 455px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 10px;
@@ -361,10 +361,9 @@ body {
     color: #fff;
     margin-top: -5px;
 }
-.produk .card .teks .diskon span {
+.produk .card .teks .CB span {
     color: rgba(100, 100, 111, 0.8);
     font-size: 18px;
-    text-decoration: line-through;
 }
 .produk .card .teks h4{
     font-weight: normal;
@@ -414,7 +413,7 @@ body {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
 
     /* Home */
     .home{
@@ -542,6 +541,7 @@ body {
     }
     .produk .card .card-header img{
         height: 200px;
+        margin-top: -22px;
     }
     
 

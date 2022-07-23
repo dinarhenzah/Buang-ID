@@ -87,7 +87,6 @@ body {
     margin-top: 45px;
 }
 .sidebar .menu {
-    position: fixed;
     box-shadow: rgba(0, 0, 0, 0.1) 1.95px 1.95px 10px;
     border-radius: 20px;
     padding: 20px;

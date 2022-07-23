@@ -275,9 +275,12 @@ body {
 }
 .checkout .beli{
     cursor: pointer;
+    display: flex;
     margin-top: 10px;
-    height: 50px;
-    width: 100%;
+    height: 30px;
+    width: 92%;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     border: 1px solid rgba(255,0,99,0.9);
     border-radius: 10px;    
@@ -285,6 +288,9 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: rgba(255,0,99,0.9);
+}
+.checkout a{
+    text-decoration: none;
 }
 .checkout .media{
     margin-top: 20px;

@@ -28,6 +28,12 @@ body {
 .back{
     display: none;
 }
+.menyu{
+    display: none;
+}
+.dropdown-content{
+    display: none;
+}
 
 /* Home */
 .home {
@@ -331,6 +337,53 @@ body {
         text-decoration: none;
         z-index: 10;
     }
+    .menyu{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        position: absolute;
+        border: none;
+        margin-top: 25px;
+        z-index: 10;
+        border-radius: 5px;
+        right: 0;
+        margin-right: 15px;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(216,28,129,1) 0%, rgba(255,0,99,1) 100%);
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 9;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+    }
+    .dropdown-content a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+    }
+    .dropdown-content a .menu-icon{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 35%;
+    }
+    .dropdown-content a .menu-icon img{
+        width: 40px;
+    }
+    .dropdown-content a .menu-icon p{
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    .show{
+        display: block;
+    }
+
     .home{
         display: flex;
         justify-content: center;

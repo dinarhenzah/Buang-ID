@@ -341,7 +341,7 @@ body {
         margin-left: 15px;
         border-radius: 5px;
         text-decoration: none;
-        z-index: 10;
+        z-index: 5;
     }
     .menyu{
         display: block;
@@ -377,7 +377,13 @@ body {
     .dropdown-content a .menu-icon{
         display: flex;
         margin-top: 20px;
-        margin-left: 35%;
+        margin-left: 30%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .dropdown-content a .menu-icon:hover{
+        background: linear-gradient(30deg, rgba(45,25,62,1) 0%, rgba(95,53,130,1) 100%);
+        width: 40%;
     }
     .dropdown-content a .menu-icon img{
         width: 40px;
@@ -388,6 +394,13 @@ body {
     }
     .show{
         display: block;
+    }
+    .dropdown-content a .active{
+        background: linear-gradient(30deg, rgba(45,25,62,1) 0%, rgba(95,53,130,1) 100%);
+        width: 40%;
+    }
+    .end{
+        margin-bottom: 20px;
     }
 
     .home{

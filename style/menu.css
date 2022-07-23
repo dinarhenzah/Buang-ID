@@ -111,7 +111,7 @@ body {
 }
 
 .sidebar .menu a .menu-icon img {
-    width: 42px;
+    width: 38px;
 }
  
 
@@ -143,8 +143,9 @@ body {
     align-items: center;
 }
 .poster .banner img{
-    height: 200px;
     width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .poster .banner h1 {
     position: absolute;
@@ -272,6 +273,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: -15px;
+    position: relative;
+    bottom: 0;
 }
 
 /* responsive */
@@ -358,6 +361,9 @@ body {
     }
     .poster .banner{
         margin-top: 20px;
+    }
+    .end{
+        margin-bottom: 20px;
     }
 
     /* Home */

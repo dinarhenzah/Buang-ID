@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/produk.css">
+    <title>Produk</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Home  -->
+        <a href="../index.html" class="back">
+            <img src="../img/icon SVG/caret-left-fill.svg" alt="">
+        </a>
+        <button type="button" class="menyu" onclick="menyu()">
+            <img src="../img/icon SVG/justify.svg" alt="">
+          </button>
+          <div id="dropdown" class="dropdown-content">
+            <a href="../menu/fashion.html">
+              <div class="menu-icon">
+                <img src="../img/icon SVG/Fashion.svg" alt="">
+                <p>Fashion</p>
+              </div>
+            </a>
+            <a href="../menu/makeup.html">
+              <div class="menu-icon">
+                <img src="../img/icon SVG/Makeup.svg" alt="">
+                <p>Makeup</p>
+              </div>
+            </a>
+            <a href="../menu/faq.html">
+              <div class="menu-icon">
+                <img src="../img/icon SVG/FAQ.svg" alt="">
+                <p>FAQ</p>
+              </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=62895380101510&text=Halo%20CekApi" target="_blank"     >
+              <div class="menu-icon end">
+                <img src="../img/icon SVG/Upload-Produkmu.svg" alt="">
+                <p>Upload</p>
+              </div>
+            </a>
+          </div>
+
+        <div class="home">
+            <div class="hero">
+                <div class="logo">
+                    <div class="logoBg">
+                      <img src="../img/logo/Buang_Id_new_with_BG-removebg-preview.png" alt="">
+                    </div>
+                </div>
+                <div class="judul">
+                    <h1>BUANG id</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, ea rerum? Numquam placeat libero qui inventore illo maxime quo. Vero?</p>
+                </div>
+            </div>
+        </div>
+        <!-- Home End -->
+    
+        <div class="produk">
+            <div class="produk-wrapper">
+
+
+    
+                <div class="fotoProduk">
+                    <div class="link">
+                        <a href="../index.html">Menu</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                        <a href="../menu/food.html">Produk</a>
+                    </div>
+                    <div class="slides">
+                        <img src="../img/menu/fashion/fashion6.jpg" width="200px" alt="">
+                    </div>
+                    <div class="slides">
+                        <img src="../img/menu/fashion/fashion6.jpg" width="200px" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="column ya">
+                            <img src="../img/menu/fashion/fashion6.jpg" class="demo cursor" onclick="currentSlide(1)" alt="">
+                        </div>
+                        <div class="column no">
+                            <img src="../img/menu/fashion/fashion6.jpg" class="demo cursor" onclick="currentSlide(2)" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="detailProduk">  
+                    <h4>Jaket wanita bahan parasut bekas</h4>
+                    <p>0 barang belum terjual</p>
+                    <div class="price">
+                        <h1>Rp.198.000</h1>
+                        <div class="CB">
+                            <span class="badge">NEW</span>
+                            <span>Rp205.000</span>
+                          </div>
+                    </div>
+                    <div class="detail">
+                        <div class="active">
+                            <h3>Detail</h3>
+                        </div>
+                        <div class="kategori">
+                            <p>Kondisi : <strong>Bekas</strong></p>
+                            <p>Berat Satuan : <strong>200 g</strong></p>
+                            <p>Kategori : <a href="../menu/fashion.html">FASHION</a></p>
+                        </div>
+                        <div class="deskripsi">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dignissimos sapiente assumenda sed voluptate. Velit, quas numquam veniam illo animi dolor ab dicta impedit illum ducimus magnam nesciunt tenetur libero!</p>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reiciendis harum quas, incidunt animi maxime eum eius, officia enim provident voluptas nisi, suscipit veniam consectetur minus deleniti dolore autem nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <h5>Atur jumlah dan catatan</h5>
+                    <div class="pilihJumlah">
+                        <div class="pilih">
+                            <button class="kurang" onclick="kurang()"><img src="../img/icon SVG/dash.svg" width="35px" alt=""></button>
+                            <input class="number" type="text" value="1">
+                            <button class="tambah" onclick="tambah()"><img src="../img/icon SVG/plus.svg" width="35px" alt=""></button>
+                        </div>
+                        <div class="sisa">Stok : <strong>Sisa 10</strong></div>
+                    </div>
+                    <div class="total">
+                        <div class="totalHarga">
+                            <p>Subtotal</p>
+                            <div class="price">
+                                <div class="new">
+                                    <span>Rp205.000</span>
+                                </div>
+                                <h2>Rp.198.000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="keranjang">Keranjang</button>
+                    <a href="https://api.whatsapp.com/send?phone=62895380101510&text=Halo%20CekApi" target="_blank" class="beli">Beli</a>
+                    <div class="media">
+                        <a href="" class="chat"><img src="../img/icon SVG/chat-text-fill.svg" alt=""> Chat</a>
+                        <a href="" class="wishlist"><img src="../img/icon SVG/heart-fill.svg" alt=""> Wishlist</a>
+                        <a href="" class="share"><img src="../img/icon SVG/share-fill.svg" alt=""> Share</a>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    </div>
+
+    <!-- <script src="../script/script.js"></script> -->
+    <script>
+
+        const no = document.querySelector('.number')
+        
+        function tambah(){
+            if(no.value >= 10){
+                no.value = 10;
+                alert('Max 10')
+            } else{
+                no.value++;
+            }
+        }
+        function kurang(){
+            if(no.value == 1){
+                no.value = 1;
+                alert('Min 1')
+            } else{
+                no.value--;
+            }
+        }
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+
+        // Dropdown
+        function menyu(){
+        document.getElementById("dropdown").classList.toggle('show');
+        }
+        window.onclick = function(event){
+            if(!event.target.matches('.menu')){
+            let dropdowns = document.getElementsByClassName("dropdown-content");
+            }
+            let i;
+            for(i = 0; i < dropdowns.length; i++){
+            let openDropdown = dropdowns[i];
+            if(openDropdown.classList.contains('show')){
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -35,7 +35,6 @@ body {
     height: auto;
     background: linear-gradient(180deg, rgba(216,28,129,1) 0%, rgba(255,0,99,1) 100%);
 }
-
 .home .hero{
     margin-left: 25%;
     display: flex;
@@ -78,6 +77,28 @@ body {
     font-weight: bold;
     margin-right: 5px;
     cursor: pointer;
+}
+/* Header punya si FAQ */
+.home .hero1{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 100px;
+}
+.home .hero1 .logo .logoBg{
+    background-color: #fff;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.home .hero1 .logo .logoBg img {
+    height: 90px;
+}
+.home .hero1 .judul1{
+    margin-left: 12px;
 }
 
 /* Sidebar */
@@ -277,6 +298,41 @@ body {
     bottom: 0;
 }
 
+/* FAQ */
+.accordion {
+    background-color: #ffee5a;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: #ffee5a;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: 0s;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #ffee5a;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
 /* responsive */
 @media screen and (max-width: 500px){
 
@@ -370,18 +426,34 @@ body {
     .home .hero{
         margin-left: 0;
     }
+    .home .hero1{
+        margin-left: 23%;
+    }
     .home .hero .logo .logoBg{
+        height: 60px;
+        width: 60px;
+    }
+    .home .hero1 .logo .logoBg{
         height: 60px;
         width: 60px;
     }
     .home .hero .logo .logoBg img{
         height: 50px;
     }
+    .home .hero1 .logo .logoBg img{
+        height: 50px;
+    }
     .home .hero .judul h1{
+        font-size: 25px;
+    } 
+    .home .hero1 .judul1 h1{
         font-size: 25px;
     } 
 
     .home .hero .judul p, .tombol{
+        display: none;
+    }
+    .home .hero1 .judul1 p{
         display: none;
     }
     

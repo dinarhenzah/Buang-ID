@@ -331,7 +331,41 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+.faq a{
+    text-decoration: none;
+    color: #444;
+    display: block;
+    margin-top: 10px;
+}
+.chatadmin{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background-color: #ffee5a;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.chatadmin .bgwa{
+    background-color: #25D366;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+}
+.chatadmin .bgwa img{
+    width: 40px;
+    color: #fff;
+}
+.chatadmin p{
+    margin-left: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
 
 /* responsive */
 @media screen and (max-width: 500px){
